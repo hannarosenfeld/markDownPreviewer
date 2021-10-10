@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>markDownPreviewer</title>
-    <script src="js/marked.js"></script>
-    <script>
-     function setDefault() {
-         let defaultText = `
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>markDownPreviewer</title>
+        <script src="js/marked.js"></script>
+        <script>
+         function setDefault() {
+             let defaultText = `
 # Hi! Welcome to my markDownPreviewer!
 ## I written this as part of my Front End Libraries Certificate on freeCodeCamp
 you can even write \`<code>\` bits one one line
@@ -31,34 +31,35 @@ follow me on:
 
 **happy coding!**
 >It's more fun to compute!
-         `;
-         document.getElementById("editor").value = defaultText;
-         document.getElementById("preview").innerHTML = marked(defaultText);
-     }
+             `;
+             document.getElementById("editor").value = defaultText;
+             document.getElementById("preview").innerHTML = marked(defaultText);
+         }
 
-     function markDownPreviewer() {
-         document.getElementById("preview").innerHTML = marked(document.getElementById("editor").value);
-     }
-     
-    </script>
-  </head>
-  <body onload="setDefault()">
-      <div class="container-fluid" id="main-content">
-          <div class="row">
-              <h1>Mark Down Previewer by <a href="https://hannarosenfeld.com/">Hanna Rosenfeld</a></h1>
-          </div>
-          
-          <div class="row">
-              <div class="col-6">
-                  <textarea id="editor" onkeyup="markDownPreviewer()" style="width: 99%; height: 99%"></textarea>
-              </div>
-              <div class="col-6">
-                  <div id="preview"></div>
-              </div>
-          </div>
-      </div>
-    <!-- Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+         function markDownPreviewer() {
+             document.getElementById("preview").innerHTML = marked(document.getElementById("editor").value);
+         }
+         
+        </script>
+    </head>
+    <body onload="setDefault()">
+        <div class="container-fluid mx-auto">
+            <div class="row">
+                <h1 class="mt-1 text-center">Mark Down Previewer by <a href="https://hannarosenfeld.com/">Hanna Rosenfeld</a></h1>
+            </div>
+            <div class="row">
+                <div class="container-fluid d-flex flex-wrap">
+                    <div class="col-md-6 col-sm-12">
+                        <textarea id="editor" onkeyup="markDownPreviewer()" class="m-0 p-0" rows="15" cols="50"></textarea>
+                    </div>
+                    <div class="col-md-6 col-sm-12 p-1 mt-2">
+                        <div id="preview"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
 </html>

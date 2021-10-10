@@ -2,20 +2,29 @@
 body {
     background: #3f3f3f;
     color: #DCDCCC;
+    width: 95%;
 }
 
-#main-content {
-    margin: 0.3em 1em 0 2.3em;
+img {
+    width: 80%;
 }
+
 
 #preview {
-    width: 90%;
+    float: left;
+    width: 99%;
 }
 
 #editor {
+    width: 99%;
+    height: 99%;
     background-color : black; 
     font-family: 'Source Code Pro', monospace;
     color: #4AF626;
+}
+
+img {
+    width: 50%;
 }
 
 a {
@@ -23,6 +32,18 @@ a {
     text-decoration: none;
 }
 
-li::marker {
-    color: hotpink;
+ul {
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #editor {
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+
 }
