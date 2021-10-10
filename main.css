@@ -12,6 +12,7 @@ img {
 
 #preview {
     float: left;
+    background-color: #333333;
     width: 99%;
 }
 
