@@ -31,13 +31,9 @@ a {
     color: pink;
     text-decoration: none;
 }
-
-ul {
-    list-style: none;
+h1 {
+    font-size: 1.3em;
 }
-    h1 {
-        font-size: 1.3em;
-    }
 h2 {
     font-size: 1.1em;
 }
