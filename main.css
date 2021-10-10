@@ -38,8 +38,9 @@ h2 {
     font-size: 1.1em;
 }
 
-@media only screen and (max-width: 600px) {
-    #editor {
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .col-md-6 {
+        width: 99%;
     }
-
 }
