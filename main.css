@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
+body {
+    background: #3f3f3f;
+    color: #DCDCCC;
+}
+
+#main-content {
+    margin: 0.3em 1em 0 2.3em;
+}
+
+#preview {
+    width: 90%;
+}
+
+#editor {
+    background-color : black; 
+    font-family: 'Source Code Pro', monospace;
+    color: #4AF626;
+}
+
+a {
+    color: pink;
+    text-decoration: none;
+}
+
+li::marker {
+    color: hotpink;
+}
