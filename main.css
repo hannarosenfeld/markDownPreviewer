@@ -27,7 +27,7 @@ img {
     width: 50%;
 }
 
-a {
+.row a {
     color: pink;
     text-decoration: none;
 }
